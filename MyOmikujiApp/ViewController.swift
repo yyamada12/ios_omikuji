@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        MyLabel.layer.cornerRadius = MyLabel.bounds.width / 2
+        MyLabel.layer.masksToBounds = true
     }
     
     // MARK: - Actions
