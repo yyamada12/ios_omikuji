@@ -21,6 +21,11 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func getOmikuji(_ sender: Any) {
+        // 0 - n
+        // arc4random_uniform(n + 1)
+        let random = arc4random_uniform(10)
+        
+        self.MyLabel.text = String(random)
     }
 
 
